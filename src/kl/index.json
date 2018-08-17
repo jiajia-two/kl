@@ -1,0 +1,48 @@
+{ 
+    "_id" : ObjectId("5b4e9d5527ff6f1b00e57208"), 
+    "imgurl" : "hot4.jpg", 
+    "more" : "打造健康肌肤", 
+    "followers" : "301566"
+}
+{ 
+    "_id" : ObjectId("5b4e9d7727ff6f1b00e57209"), 
+    "imgurl" : "hot5.jpg", 
+    "more" : "网易原创生活类品牌", 
+    "followers" : "342610"
+}
+{ 
+    "_id" : ObjectId("5b4e9da927ff6f1b00e5720a"), 
+    "imgurl" : "hot6.jpg", 
+    "more" : "基因级肌密修复", 
+    "followers" : "474127"
+}
+{ 
+    "_id" : ObjectId("5b4e9dc727ff6f1b00e5720b"), 
+    "imgurl" : "hot7.jpg", 
+    "more" : "科学配方 优质原材料", 
+    "followers" : "629320"
+}
+{ 
+    "_id" : ObjectId("5b4e9de627ff6f1b00e5720c"), 
+    "imgurl" : "hot8.jpg", 
+    "more" : "法兰西的浪漫玫瑰", 
+    "followers" : "399752"
+}
+{ 
+    "_id" : ObjectId("5b4e9e0527ff6f1b00e5720d"), 
+    "imgurl" : "hot9.jpg", 
+    "more" : "高雅与华丽的代名词", 
+    "followers" : "382382"
+}
+{ 
+    "_id" : ObjectId("5b4e9e2127ff6f1b00e5720e"), 
+    "imgurl" : "hot10.jpg", 
+    "more" : "源自纽约的国际时尚品牌", 
+    "followers" : "766369"
+}
+{ 
+    "_id" : ObjectId("5b4e9e4a27ff6f1b00e5720f"), 
+    "imgurl" : "hot11.jpg", 
+    "more" : "SPA体验型护肤品牌", 
+    "followers" : "371397"
+}

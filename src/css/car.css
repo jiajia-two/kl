@@ -1,0 +1,186 @@
+#main div div:first-child {
+  height: 80px;
+  border-bottom: 1px solid #D12548;
+}
+
+#main div div:first-child ul {
+  height: 100%;
+  bottom: 10px;
+  display: flex;
+}
+
+#main div div:first-child ul li {
+  flex: 1;
+  text-align: center;
+  line-height: 100px;
+  font-size: 16px;
+}
+
+#main div div:first-child ul li input[type="checkbox"] {
+  width: 20px;
+  height:18px;
+  display: inline-block;
+}
+
+#main div div:first-child ul li:nth-child(1) {
+  flex: 2;
+  text-align: left;
+}
+
+#main div div:first-child ul li:nth-child(1) input[type="checkbox"] {
+  margin: 0 20px 0 10px;
+}
+
+#main div div:first-child ul li:nth-child(2) {
+  flex: 3;
+  text-align: left;
+}
+
+#main div div:nth-child(2) {
+  border-bottom: 1px solid #D12548;
+}
+
+#main div div:nth-child(2) ul {
+  height: 100%;
+  bottom: 10px;
+  display: flex;
+  border: 1px solid #eee;
+  margin: 5px 0;
+}
+
+#main div div:nth-child(2) ul li {
+  flex: 1;
+  text-align: center;
+  height: 120px;
+  line-height: 120px;
+  font-size: 16px;
+}
+
+#main div div:nth-child(2) ul li input[type="checkbox"] {
+  width: 20px;
+  display: inline-block;
+}
+
+#main div div:nth-child(2) ul li .qty {
+  border: 1px solid #ccc;
+}
+
+#main div div:nth-child(2) ul li .qty input[type="text"] {
+  width: 30px;
+  border: none;
+  text-align: center;
+}
+
+#main div div:nth-child(2) ul li .qty span:first-child {
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+
+#main div div:nth-child(2) ul li .qty span:last-child {
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+
+#main div div:nth-child(2) ul li img {
+  width: 100px;
+  height: 100px;
+}
+
+#main div div:nth-child(2) ul li:nth-child(1) {
+  flex: 2;
+  text-align: left;
+}
+
+#main div div:nth-child(2) ul li:nth-child(1) input[type="checkbox"] {
+  margin: 0 20px 0 10px;
+}
+
+#main div div:nth-child(2) ul li:nth-child(2) {
+  flex: 3;
+  text-align: left;
+}
+
+#main div div:nth-child(2) ul li:nth-child(3), #main div div:nth-child(2) ul li:nth-child(5) {
+  padding-top: 30px;
+  line-height: 25px;
+}
+
+#main div div:nth-child(2) ul li:nth-child(3) span, #main div div:nth-child(2) ul li:nth-child(5) span {
+  text-weight: 700;
+  font-size: 18px;
+  color: #222;
+}
+
+#main div div:nth-child(2) ul li:nth-child(3) .old, #main div div:nth-child(2) ul li:nth-child(5) .old {
+  text-weight: 400;
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+#main div div:nth-child(2) ul li:nth-child(3) .tax, #main div div:nth-child(2) ul li:nth-child(5) .tax {
+  text-weight: 400;
+  font-size: 14px;
+  color: #aaa;
+}
+
+#main div div:nth-child(3) {
+  width: 800px;
+  line-height: 30px;
+  margin: 20px;
+  float: left;
+  text-align: right;
+}
+
+#main div div:nth-child(3) p:first-child {
+  color: #222;
+}
+
+#main div div:nth-child(3) p:first-child span {
+  color: #D12548;
+  font-size: 22px;
+}
+
+#main div div:nth-child(3) p:last-child {
+  color: #aaa;
+}
+
+#main div .btn_pay {
+  float: right;
+  margin: 20px 40px 20px 0;
+  width: 120px;
+  height: 55px;
+  background-color: #D12548;
+  font-size: 24px;
+  color: #fff;
+}
+
+#btnClear {
+  float: right;
+  margin-top: 55px;
+}
+
+#btnClear:hover {
+  color: #888;
+}
+#carList li p {
+  line-height: 30px;
+  margin-top: 28px;
+}
+#carList li{
+  position: relative;
+}
+.close{
+  position: absolute;
+  left:66px;
+  top:-35px;
+  font-size: 24px;
+}
+.good{
+  
+  height:18px;
+}

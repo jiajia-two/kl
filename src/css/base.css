@@ -1,0 +1,527 @@
+@charset "UTF-8";
+/*(1)清除默认样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, img, input, button {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+/*去掉input等聚焦时的蓝色边框*/
+ul, li, ol {
+  list-style: none;
+}
+
+select, input {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+/*防止拖动*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table {
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, footer, section, main, nav {
+  display: block;
+}
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #5F5F5F;
+}
+
+a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+i {
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*2.添加公共样式*/
+/*body {
+    font:12px Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}*/
+/*清除浮动（不管）*/
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+  zoom: 1;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s, i, em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+/*公共类*/
+.container {
+  /*内容、版心 提取 */
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ac {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.colorred {
+  color: #D12548;
+}
+
+.underline {
+  border-bottom: 1px solid #ccc;
+}
+
+#mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #cccccc20;
+  text-align: center;
+  padding: 200px;
+  display: none;
+}
+
+#mask i.fa {
+  font-size: 60px;
+  color: #D12548;
+}
+
+
+#top {
+  background-color: #333;
+  /*height: 42px;*/
+}
+
+.container ul, .container li {
+  display: inline-block;
+}
+
+.container li {
+  font-size: 12px;
+  line-height: 30px;
+  width: 80px;
+  text-align: center;
+}
+
+#top a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.more a:hover {
+  color: #f00;
+  background-color: #fff;
+}
+
+.more i {
+  margin: 0px 5px;
+  transition: all .4s;
+}
+
+
+.more a:hover i {
+  transform: translate(0, 5px) rotate(180deg);
+}
+
+.more {
+  position: relative;
+}
+
+.more ul {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  width: 120%;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-top: 0 none;
+}
+
+.more li {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.more:hover ul {
+  display: block;
+}
+
+/*=========================================  top end  =======================================================*/
+/*===========================================   nav   ==================================================*/
+#nav {
+  /*background-color: #;*/
+  /*height: 120px;*/
+  border-bottom: 1px solid #ccc;
+}
+
+section {
+  vertical-align: top;
+}
+
+.nav_t section {
+  display: inline-block;
+}
+
+.search {
+  padding-top: 22px;
+  margin-left: 50px;
+}
+
+.search_t {
+  /*width: 512px;*/
+  height: 40px;
+  margin-left: 30px;
+  border: 2px solid #f00;
+  border-radius: 20px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+i.fa-search {
+  font-size: 16px;
+  color: #EAEAEA;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+
+.search_t input {
+  vertical-align: middle;
+  line-height: 36px;
+  width: 360px;
+  height: 36px;
+  font-size: 16px;
+}
+
+.search_t button {
+  width: 60px;
+  height: 38px;
+  background-color: #f00;
+  border-radius: 19px;
+  position: relative;
+  top: -1px;
+  right: -1px;
+}
+
+.search_t button .fa-search {
+  font-size: 22px;
+}
+
+.search_b {
+  margin: 2px 0 0 70px;
+}
+
+.search_b li {
+  width: 50px;
+  /*display: block;*/
+}
+
+.search_b a:hover {
+  text-decoration: underline;
+  color: #aaa;
+}
+
+a.colorred:hover {
+  color: #D12548;
+}
+
+.nav_t_r {
+  margin: 22px 0 0 120px;
+}
+
+.shoppingcar {
+  width: 120px;
+  border: 2px solid #f00;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  color: #333;
+}
+
+.shoppingcar i.fa {
+  color: #f00;
+  font-size: 22px;
+  margin-right: 5px;
+  line-height: 36px;
+}
+
+.shoppingcar:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav_b {
+  position: relative;
+}
+
+.nav_b .all {
+  background: linear-gradient(to right, #f00, #ff3264);
+  display: inline-block;
+  width: 165px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.nav_b .all .fa-bars {
+  margin: 0 30px 0 20px;
+}
+
+.nav_b .all:hover .alls {
+  display: block;
+}
+
+.nav_b .alls {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 40px;
+  background: linear-gradient(to right, #f00, #ff3264);
+}
+
+.nav_b .alls li {
+  display: block;
+  width: 165px;
+  height: 50px;
+  text-align: left;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.nav_b .alls li a {
+  color: #fff;
+}
+
+.nav_b .alls li a:hover {
+  text-decoration: none;
+}
+
+.nav_b .alls li i:first-child {
+  display: inline-block;
+  padding: 0 43px 0 20px;
+  width: 50px;
+  height: 40px;
+}
+
+.nav_b .alls li i:last-child {
+  float: right;
+  margin: 12px 12px 0 0;
+}
+
+.nav_b .alls li section.nav_brand {
+  display: none;
+  position: absolute;
+  left: 165px;
+  top: 0;
+  width: 950px;
+  height: 500px;
+  background-color: #fff;
+  padding-left: 10px;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_l div.nav_brand_l_ {
+  line-height: 42px;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_l div.nav_brand_l_ div {
+  display: inline-block;
+  width: 295px;
+  padding-right: 20px;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_l div.nav_brand_l_ div .title {
+  font-size: 16px;
+  color: #555;
+  font-weight: 700;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_l div.nav_brand_l_ div.underline {
+  height: 40px;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_l div.nav_brand_l_ a {
+  color: #aaa;
+  margin: 0 10px 0 5px;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_l div.nav_brand_l_ .colorred {
+  color: #D12548;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_r {
+  width: 330px;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_r div {
+  display: inline-block;
+}
+
+.nav_b .alls li section.nav_brand div.nav_brand_r div div img {
+  width: 110px;
+  height: 110px;
+  margin: 5px 5px;
+}
+
+.nav_b .alls li:hover {
+  background-color: #fff;
+}
+
+.nav_b .alls li:hover i {
+  color: #D12548;
+}
+
+.nav_b .alls li:hover a {
+  color: #D12548;
+}
+
+.nav_b .alls li:hover section {
+  display: block;
+}
+
+.nav_b .nav_b_r li {
+  margin-left: 30px;
+}
+
+.nav_b .nav_b_r li a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav_b .nav_b_r li a:hover {
+  text-decoration: none;
+  color: #D12548;
+}
+
+#bottom {
+  background-color: #333;
+}
+
+#bottom .container {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#bottom .container li {
+  display: block;
+  width: 700px;
+  margin-bottom: 10px;
+}
+
+#bottom .container li a {
+  margin-right: 4px;
+}
+
+#bottom .container li span {
+  color: #aaa;
+}
+
+li.list {
+  transition: all .5s;
+}
+
+li.list:hover {
+  border: 0 none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 10px #D12548;
+}
+
+a.shoppingcar:hover {
+  transition: all .5s;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+

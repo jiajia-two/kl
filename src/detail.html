@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/jquery-xZoom/jquery.xZoom.css">
+    <script src="./lib/require.js" type="text/javascript" data-main="./js/detail"></script>
+    <title>详情页</title>
+</head>
+<body>
+    <header id="top">
+        <div class="container clearfix">
+            <ul class="top_l fl">
+                <li style="color: #C2C2C2" class="wel">考拉欢迎你！</li>
+                <li><a href="login.html" class="log">登录</a></li>
+                <li><a href="register.html" class="reg">免费注册</a></li>
+                <li><a href="javascript:">手机考拉</a></li>
+            </ul>
+            <ul class="top_r fr">
+                <li><a href="javascript:">每日签到</a></li>
+                <li><a href="javascript:">我的订单</a></li>
+                <li class="more">
+                    <a href="javascript:">个人中心<i class="fa fa-sort-desc"></i></a>
+                    <ul>
+                        <li><a href="javascript:">我的优惠券</a></li>
+                        <li><a href="javascript:">我的红包</a></li>
+                        <li class="underline"><a href="javascript:">我的考拉豆</a></li>
+                        <li><a href="javascript:">账户管理</a></li>
+                        <li class="underline"><a href="javascript:">我的实名制</a></li>
+                        <li><a href="javascript:">我收藏的商品</a></li>
+                        <li class="underline"><a href="javascript:">我关注的品牌</a></li>
+                        <li><a href="javascript:">售后管理</a></li>
+                    </ul>
+                </li>
+                <li class="more">
+                    <a href="javascript:" class="more">客户服务<i class="fa fa-sort-desc"></i></a>
+                    <ul>
+                        <li><a href="javascript:"><i class="fa fa-user-circle-o"></i>联系客服</a></li>
+                        <li><a href="javascript:"><i class="fa fa-question-circle-o"></i>帮助中心</a></li>
+                    </ul>
+                </li>
+                <li class="more">
+                    <a href="javascript:" class="more">充值中心<i class="fa fa-sort-desc"></i></a>
+                    <ul>
+                        <li><a href="javascript:">话费充值</a></li>
+                        <li><a href="javascript:">游戏充值</a></li>
+                        <li><a href="javascript:">AppStore充值码</a></li>
+                    </ul>
+                </li>
+                <li class="more">
+                    <a href="javascript:" class="more">消费者权益<i class="fa fa-sort-desc"></i></a>
+                    <ul>
+                        <li><a href="javascript:">消费者告知书</a></li>
+                        <li><a href="javascript:">消费权益公示</a></li>
+                    </ul>
+                </li>
+                <li class="more">
+                    <a href="javascript:" class="more">更多<i class="fa fa-sort-desc"></i></a>
+                    <ul>
+                        <li class="underline"><a href="javascript:">收藏本站</a></li>
+                        <li><a href="javascript:">新浪微博</a></li>
+                        <li><a href="javascript:">微信公众号</a></li>
+                        <li class="underline"><a href="javascript:">易信公众号</a></li>
+                        <li class="underline"><a href="javascript:">招商合作</a></li>
+                        <li><a href="javascript:">考拉招聘</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </div>
+    </header>
+    <nav id="nav">
+    <div class="container clearfix">
+        <div class="nav_t">
+            <section>
+                <img src="images/h1.png" height="100" width="222" alt="网易考拉网" />
+            </section>
+            <section class="search">
+                <div class="search_t">
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="search" placeholder="搜索您想要的"/>
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <ul class="search_b">
+                    <li><a href="javascript:" class="colorred">话费充值</a></li>
+                    <li><a href="javascript:">面膜</a></li>
+                    <li><a href="javascript:">德运</a></li>
+                    <li><a href="javascript:">铁元</a></li>
+                    <li><a href="javascript:">sk2</a></li>
+                    <li><a href="javascript:">眼霜</a></li>
+                    <li><a href="javascript:">麦片</a></li>
+                </ul>
+            </section>
+            <section class="nav_t_r">
+                <a href="car.html" class="shoppingcar" id="shoppingcar">    
+                    <i class="fa fa-shopping-cart"></i>
+                    <i>购物车</i>
+                    <span id="num"></span>
+                </a>
+            </section>
+        </div>
+        <div class="nav_b">
+            <div class="all">
+                <i class="fa fa-bars"></i>所有分类
+                <ul class="alls">
+                    <li>
+                        <a href="javascript:"><i class="fa fa-shopping-cart"></i>母婴儿童<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">奶粉</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">宝宝用品</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">童装童鞋</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">妈妈必备</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav3.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav3.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav3.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav3.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav3.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav3.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-female"></i>美容彩妆<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">粉底</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">口号</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眼线</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眉笔</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">睫毛</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">假发</a></div>
+                                        </div>
+                                        <div>>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav4.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav4.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav4.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav4.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav4.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav4.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-calendar-o"></i>轻奢<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">奶粉</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">宝宝用品</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">童装童鞋</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">妈妈必备</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav5.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav5.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav5.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav5.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav5.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav5.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-shower"></i>家居个护<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">粉底</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">口号</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眼线</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眉笔</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">睫毛</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">假发</a></div>
+                                        </div>
+                                        <div>>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav6.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav6.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav6.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav6.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav6.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav6.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-heart-o"></i>营养保健<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">奶粉</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">宝宝用品</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">童装童鞋</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">妈妈必备</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav7.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav7.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav7.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav7.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav7.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav7.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-history"></i>手表配饰<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">粉底</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">口号</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眼线</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眉笔</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">睫毛</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">假发</a></div>
+                                        </div>
+                                        <div>>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav8.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav8.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav8.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav8.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav8.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav8.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-camera"></i>数码家电<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">奶粉</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">宝宝用品</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">童装童鞋</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">妈妈必备</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav9.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav9.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav9.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav9.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav9.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav9.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-spoon"></i>环球美食<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">粉底</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">口号</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眼线</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眉笔</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">睫毛</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">假发</a></div>
+                                        </div>
+                                        <div>>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav1.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav1.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav1.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav1.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav1.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav1.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-life-buoy"></i>运动户外<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">奶粉</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">纸尿裤</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">宝宝用品</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">童装童鞋</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">妈妈必备</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav10.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav10.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav10.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav10.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav10.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav10.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="fa fa-grav"></i>服饰鞋靴<i class="fa fa-angle-right"></i></a>
+                        <section class="nav_brand clearfix">
+                            <div class="nav_brand_l fl">
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">粉底</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">牛栏</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">雀巢</a>
+                                            <a href="javascript:">合生元</a>
+                                            <a href="javascript:">1段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">2段</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">牛栏</a>
+                                            <a href="javascript:">a2</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:" class="colorred">美赞臣</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">美林</a>
+                                            <a href="javascript:" class="colorred">合生元</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="underline"><a href="javascript:" class="title">口号</a></div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">花王</a>
+                                            <a href="javascript:">好奇</a>
+                                            <a href="javascript:">斑驳</a>
+                                            <a href="javascript:">帮宝适</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮乐贝</a>
+                                            <a href="javascript:">S号</a>
+                                            <a href="javascript:">M号</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:" class="colorred">妮飘</a>
+                                            <a href="javascript:" class="colorred">喜宝</a>
+                                            <a href="javascript:">妮乐贝</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">雀巢</a>
+                                            <a href="javascript:" class="colorred">X号</a>
+                                            <a href="javascript:" class="colorred">爱他美</a>
+                                            <a href="javascript:">爱他美</a>
+                                            <a href="javascript:">喜宝</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眼线</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">饼干</a>
+                                            <a href="javascript:">营养品</a>
+                                            <a href="javascript:">泡芙</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喜清洗消毒</a>
+                                            <a href="javascript:" class="colorred">营养品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">饼干</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">辅食泥</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">泡芙</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">眉笔</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">护理</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                            <a href="javascript:" class="colorred">喂养</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:">饰品</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:">护理</a>
+                                            <a href="javascript:" class="colorred">积木</a>
+                                            <a href="javascript:" class="colorred">喜清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                            <a href="javascript:" class="colorred">清洗消毒</a>
+                                            <a href="javascript:">喂养</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_brand_l_">
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">睫毛</a></div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">宝宝连体服</a>
+                                            <a href="javascript:" class="colorred">凉鞋</a>
+                                            <a href="javascript:" class="colorred">连体爬服</a>
+                                            <a href="javascript:">学步鞋</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="underline"><a href="javascript:" class="title">假发</a></div>
+                                        </div>
+                                        <div>>
+                                            <a href="javascript:">妈咪包</a>
+                                            <a href="javascript:">孕期营养</a>
+                                            <a href="javascript:">孕妈服</a>
+                                            <a href="javascript:">产前产后用品</a>
+                                            <a href="javascript:">妈妈洗护</a>
+                                            <a href="javascript:">清洗消毒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_brand_r fr">
+                                <div>
+                                    <div><a href="javascript:"><img src="./images/nav11.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav11.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav11.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav11.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav11.png" alt="" /></a></div>
+                                    <div><a href="javascript:"><img src="./images/nav11.png" alt="" /></a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:"><img src="images/nav2.png" height="120" width="250" alt="" /></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+            
+            <ul class="nav_b_r">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="masklist.html">今日限时购</a></li>
+                <li><a href="javascript:">每日上新</a></li>
+                <li><a href="javascript:">全球旗舰</a></li>
+                <li><a href="javascript:">工厂店</a></li>
+                <li><a href="javascript:">品质奶粉</a></li>
+                <li><a href="javascript:">人气面膜</a></li>
+                <li><a href="javascript:">充值</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <main id="detail">
+        <div class="container">
+            <h4>您当前的位置：首页>...>详情页</h4>
+            <div class="buy clearfix">
+                <div class="left fl">
+                    <div class="xzoom-t"><img src="" class="big-pic"></div>
+                    <div class="tu">
+                        <ul class="imgs">
+                        </ul>
+                    </div>
+                    <div class="turn">
+                        <span class="tl" style="cursor: pointer;"><</span>
+                        <span class="tr" style="cursor: pointer;">></span>
+                    </div>
+                </div>
+                <div class="right fl">
+                    <h2></h2>
+                    <p class="more"></p>
+                    <p style="background:#dfdfdf;height:60px;line-height: 60px;padding-left: 10px;">售价:<span class="price"></span>参考价:<span class="oldprice"></span></p>
+                    <div class="active">
+                            <span>活动</span>
+                        <ul class="act">
+
+                        </ul>
+                    </div>
+                    <p>税费:<span class="taxa"></span></p>
+                    <div class="ser">服务:本商品由<span class="sermsg">自营保税仓</span>发货</div>
+                    <p class="add">数量:<span class="jian"  style="cursor:pointer;margin-left:10px;">-</span>	<input type="text"  class="num" value="1"></input><span class="jia" style="cursor:pointer">+</span><em class="explain"></em></p>
+                    <p>说明：<span class="shuo">会员96折，支持三十天无忧退货</span></p>
+                    <p>HOT：<span class="buys" style="color:#333;font-size:16px"></span>人评价<span class="assess" style="color:#333;font-size:16px"></span>晒单</p>
+                    <div class="choose">
+                        <span style="background:#e31436">立即购买</span>
+                        <span style="background:#fff;color:black; cursor:pointer "  class="dtadd">加入购物车</span>
+                        <span style="color: black">收藏</span>
+                    </div>
+                </div>
+            </div>
+            <div class="data clearfix">
+                <div class="data-l fl">
+                    <h2>看了又看</h2>
+                    <div class="history">
+                        <ul class="look">
+                        </ul>
+                    </div>
+                </div>
+                <div class="data-r fl">
+                    <ul>
+                        <li class="gd">商品详情</li>
+                        <li class="user-assess">用户评价</li>
+                    </ul>
+                    <div class="appear">
+                        <div class="one">
+                            <div class="one-t">
+                                <ul class="one-top">
+                                    <li>功能：美白　修复　深度保湿　淡化黑头</li>
+                                    <li>舒缓护肤适合肤质 ：任何肤质质地：</li>
+                                    <li>液体适用部位：颈部　面部细纹　手部</li>
+                                    <li>面部适用群体：所有人群</li>
+                                    <li>品名：OLAY 玉兰油 PRO-X</li>
+                                    <li>亮洁皙颜 祛斑精华液 40毫升/瓶</li>
+                                    <li>产地：中国包装：</li>
+                                    <li>瓶装保质期：3年</li>
+                                    <li> 产品类型：乳液</li>
+                                </ul>
+                                
+                                <div><span class="open">展开</span><span class="close">收起</span></div>
+                            </div>
+                            <div class="jia"><p>假一赔十</p>
+                                网易考拉每一件商品都通过严苛的品质把关，保障正品，保障品质。特推出 “假一赔十” 的正品保障政策，杜绝一切假货，让您无忧购物。
+                            </div>
+                            <div class="pic">
+                                <img src="../src/images/data-1.jpg" alt="">
+                                <img src="../src/images/data-2.jpg" alt="">
+                                <img src="../src/images/data-3.jpg" alt="">
+                                <img src="../src/images/data-4.jpg" alt="">
+                                <img src="../src/images/data-5.jpg" alt="">
+                                <img src="../src/images/data-6.jpg" alt="">
+                                <img src="../src/images/data-7.jpg" alt="">
+                                <img src="../src/images/data-8.jpg" alt="">
+                                <img src="../src/images/data-9.jpg" alt="">
+                                <img src="../src/images/data-10.jpg" alt="">
+                                <img src="../src/images/data-11.jpg" alt="">
+                                <img src="../src/images/data-12.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="two">
+                            这里是用户评价区
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>
+    <footer id="bottom">
+        <div class="container clearfix">
+            <ul>
+                <li>
+                    <a href="">About NetEase</a> -
+                    <a href="">公司简介</a> -
+                    <a href="">联系方法</a> -
+                    <a href="">友情链接</a> -
+                    <a href="">招聘信息</a> -
+                    <a href="">客户服务</a> -
+                    <a href="">隐私政策</a> -
+                    <a href="">网络营销</a>
+                </li>
+                <li>
+                    <a href="">网络文化经营许可证</a>
+                    <a href="">浙网文[2016]0155-055号</a>
+                    <a href="">增值电信业务经营许可证：浙B2-20160288 </a>
+                    <a href="">自营经营者信息</a>
+                </li>
+                <li>
+                    <img src="images/bottom1.png" height="22" width="21" alt="" />
+                    <a href="">浙公网安备 33010802002216号</a>
+                    <span>网易公司版权所有©1997-2018</span>
+                    <a href="">互联网药品信息服务资格证书编号（浙）-2017-0027</a>
+                </li>
+            </ul><br />
+            <img src="images/bottom2.png" height="41" width="225" alt="" />
+        </div>
+    </footer>
+    <div id="mask">
+        <div class="tan">
+            <p>加入购物车成功!</p>
+            <a href="./masklist.html" class="cc fl"><<继续购物</a>
+            <a href="./car.html" class="aa fr">去结算</a>
+        </div>
+    </div>
+</body>
+</html>

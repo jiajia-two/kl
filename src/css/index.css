@@ -1,0 +1,211 @@
+
+
+
+
+#banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+  #banner ul li img{
+    width:1920px;
+    height:500px;
+  }
+  
+  #banner ul:first-child {
+    width: 100%;
+    height: 100%;
+    margin-left: -245px;
+  }
+  
+  #banner .imgs li {
+    transition: all 0.3s;
+  }
+  
+  #banner .points {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+  }
+  
+  #banner .points span {
+    display: inline-block;
+    background-color: #eee;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  #main{
+    background: rgb(240, 233, 233);
+  }
+  
+  #main .main1 li{
+    float: left;
+    width:265px;
+    height:318px;
+    margin-right:10px;
+  }
+  #main .main2 li{
+    float: left;
+    width:260px;
+    height:332px;
+    margin-right:14px;
+  }
+  #main .hot-brand h2{
+    padding-left:40px;
+    width:100%;
+    height:60px;
+    line-height:60px;
+    font-size:18px;
+    font-weight: bold;
+    color:#000;
+    border-bottom: 1px solid #ccc;
+  }
+  #main .hot-brand h2>span{
+    margin-left:20px;
+    font-size: 12px;
+    color:#555;
+  }
+  #main .hot-brand .left{
+    width: 219px;
+    height:355px;
+    overflow: hidden;
+    position: relative;
+  }
+  #main .hot-brand .hot-left li{
+    width: 219px;
+    height:355px;   
+    position: relative;
+  }
+  
+  #main .hot-brand .hot-left li a>img{
+    width:219px;
+    height:219px;
+  }
+  #main .hot-brand .hot-left .blur{
+    width:219px;
+    height: 136px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    overflow: hidden;
+    
+  }
+  #main .hot-brand .hot-left .blur img{
+    filter: blur(6px);
+    margin-top: -20%;
+  }
+  #main .hot-brand .hot-left .txt{
+    width:219px;
+    position: absolute;
+    left:0px;
+    top:219px;
+    height: 136px;
+    background-color: #151515;
+    color: #fff;
+    z-index: 12;
+    opacity: 0.8;
+    padding-top:35px;
+  }
+  #main .hot-brand .hot-left .txt p:first-child{
+    width:100%;
+    font-size: 20px;
+    color: #fff;
+  }
+  #main .hot-brand .hot-left .txt p:last-child{
+    width:100%;
+    font-size: 14px;
+    color: #fff;
+  }
+  #main .hot-brand .line{
+    position: absolute;
+    left:0px;
+    top:217px;
+  }
+  #main .hot-brand .line .step{
+    float: left;
+    margin-right: 2px;
+    width: 71px;
+    height: 2px;
+    background-color: #555
+  }
+  #main .hot-brand .line .progress{
+    position: absolute;
+    width: 71px;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: #ff1e32;
+  }
+
+
+
+  #main .hot-brand .right .actions{
+    display: none;
+  }
+ 
+  #main .hot-brand .right{
+    width:876px;
+  }
+  #main .hot-brand .right .itm{
+    background: #fff;
+    padding-top:20px;
+    position: relative;
+    float: left;
+    width: 219px;
+    height: 176px;
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    overflow: hidden;
+  }
+  #main .hot-brand .right .follow{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 52px;
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #999;
+    text-decoration: none;
+    border-radius: 10px;
+
+  }
+  #main .hot-brand .right .enter{
+    position: absolute;
+    text-decoration: none;
+    left:62px;
+    bottom:12px;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 36px;
+    box-sizing: border-box;
+    line-height: 32px;
+    color: #ff1e3c;
+    background-color: #fff;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    border: 2px solid #ff1e3c;
+    font-size: 14px;
+  }
+  #main .hot-brand .right  .followers{
+    position: absolute;
+    left:45px;
+    bottom:50px;
+  }
+  #main .hot-brand .right .itm:hover .img{
+    margin-top: -24px;
+    transform: scale(0.66);
+    transition: 0.3s;
+  }
+  #main .hot-brand .right .itm:hover .desc{
+    display: none;
+  }
+  #main .hot-brand .right .itm:hover .actions{
+    display: block;
+  }

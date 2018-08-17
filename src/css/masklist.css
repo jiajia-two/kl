@@ -1,0 +1,25 @@
+#main{background-color: #F3F3F3;}
+#main .main_box>p{height: 42px;font-size: 12px;line-height: 42px;}
+#main .main_box p a{margin:0 5px;}
+#main .filter{background-color: #F8F8F8;}
+#main .filter>div{margin-bottom: 3px;}
+#main .brands div{width: 10%;}
+#main .brands ul{width: 90%;background-color: #fff;;}
+#main .countries div{width: 10%;}
+#main .countries ul{width: 90%;background-color: #fff;}
+#main .sorting{margin:20px 0;background-color: #fff;height: 24px;line-height: 24px;}
+#main .sorting a{margin:0 10px;}
+#main a{color:#000;}
+#main a:hover{color:#000;}
+#main .goodslist li{width: 266px;background-color: #fff;float: left;margin:0 12px 15px 0;border:1px solid #ccc;}
+#main .goodslist li:nth-child(4n){margin-right:0;}
+#main .goodslist li a img{width: 264px;}
+#main .goodslist li p{text-align: left;padding-left: 10px;}
+#main .goodslist li p:nth-child(2) span:nth-child(1){font-size: 18px;font-weight: bold;color:#E31436;}
+#main .goodslist li p:nth-child(2) i{font-size: 12px;}
+#main .goodslist li a:nth-child(3){font-size: 12px;line-height: 18px;display:inline-block;width: 100%;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;}
+#main .goodslist li p:nth-child(4) span{display:inline-block;font-size: 12px;line-height: 16px;background-color: #E31436;color:#fff;padding:0 3px;border-radius: 2px;}
+#main .goodslist li p:nth-child(5){font-weight: bold;color:#000;}
+#main .page{text-align: center;}
+#main .page span{display:inline-block;line-height: 20px;width: 20px;background-color: #ccc;border:1px solid;text-align: center;cursor: pointer;margin:10px;}
+#main .page .active{background-color: #E31436;color:#fff;}
